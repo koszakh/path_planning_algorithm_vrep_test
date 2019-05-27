@@ -14,20 +14,20 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/konst/path_planning_vrep_simulation/src/path_planning_vrep_simulation-master"
+echo_and_run cd "/home/konst/path_planning_algorithm_vrep_test/src/path_planning_vrep_simulation-master"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/konst/path_planning_vrep_simulation/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/konst/path_planning_algorithm_vrep_test/install/lib/python2.7/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/konst/path_planning_vrep_simulation/install/lib/python2.7/dist-packages:/home/konst/path_planning_vrep_simulation/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/konst/path_planning_vrep_simulation/build" \
+    PYTHONPATH="/home/konst/path_planning_algorithm_vrep_test/install/lib/python2.7/dist-packages:/home/konst/path_planning_algorithm_vrep_test/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/konst/path_planning_algorithm_vrep_test/build" \
     "/usr/bin/python2" \
-    "/home/konst/path_planning_vrep_simulation/src/path_planning_vrep_simulation-master/setup.py" \
-    build --build-base "/home/konst/path_planning_vrep_simulation/build/path_planning_vrep_simulation-master" \
+    "/home/konst/path_planning_algorithm_vrep_test/src/path_planning_vrep_simulation-master/setup.py" \
+    build --build-base "/home/konst/path_planning_algorithm_vrep_test/build/path_planning_vrep_simulation-master" \
     install \
     $DESTDIR_ARG \
-    --install-layout=deb --prefix="/home/konst/path_planning_vrep_simulation/install" --install-scripts="/home/konst/path_planning_vrep_simulation/install/bin"
+    --install-layout=deb --prefix="/home/konst/path_planning_algorithm_vrep_test/install" --install-scripts="/home/konst/path_planning_algorithm_vrep_test/install/bin"

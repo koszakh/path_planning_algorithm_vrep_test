@@ -7,7 +7,7 @@ from sys import path as sys_path
 
 from pkgutil import extend_path
 
-__extended_path = "/home/konst/path_planning_vrep_simulation/src/path_planning_vrep_simulation-master/src".split(";")
+__extended_path = "/home/konst/path_planning_algorithm_vrep_test/src/path_planning_vrep_simulation-master/src".split(";")
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

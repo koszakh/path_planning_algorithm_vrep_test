@@ -91,7 +91,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'path_planning_vrep_simulation': ['/home/konst/path_planning_vrep_simulation/src/path_planning_vrep_simulation-master/msg'], 'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}
+// {'path_planning_vrep_simulation': ['/home/konst/path_planning_algorithm_vrep_test/src/path_planning_vrep_simulation-master/msg'], 'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -158,12 +158,12 @@ struct Definition< ::path_planning_vrep_simulation::WheelRotationData_<Container
 {
   static const char* value()
   {
-    return "int32 id\n\
-float32 left_velocity\n\
-float32 right_velocity\n\
-bool rotation\n\
-bool goal_reached\n\
-";
+    return "int32 id\n"
+"float32 left_velocity\n"
+"float32 right_velocity\n"
+"bool rotation\n"
+"bool goal_reached\n"
+;
   }
 
   static const char* value(const ::path_planning_vrep_simulation::WheelRotationData_<ContainerAllocator>&) { return value(); }

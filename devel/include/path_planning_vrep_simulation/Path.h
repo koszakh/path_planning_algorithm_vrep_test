@@ -77,7 +77,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'path_planning_vrep_simulation': ['/home/konst/path_planning_vrep_simulation/src/path_planning_vrep_simulation-master/msg'], 'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}
+// {'path_planning_vrep_simulation': ['/home/konst/path_planning_algorithm_vrep_test/src/path_planning_vrep_simulation-master/msg'], 'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -144,14 +144,14 @@ struct Definition< ::path_planning_vrep_simulation::Path_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int32     platform_id\n\
-Point2d[] path_points\n\
-\n\
-================================================================================\n\
-MSG: path_planning_vrep_simulation/Point2d\n\
-float32 x\n\
-float32 y\n\
-";
+    return "int32     platform_id\n"
+"Point2d[] path_points\n"
+"\n"
+"================================================================================\n"
+"MSG: path_planning_vrep_simulation/Point2d\n"
+"float32 x\n"
+"float32 y\n"
+;
   }
 
   static const char* value(const ::path_planning_vrep_simulation::Path_<ContainerAllocator>&) { return value(); }

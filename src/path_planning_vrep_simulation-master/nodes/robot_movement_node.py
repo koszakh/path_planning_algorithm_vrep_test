@@ -8,6 +8,7 @@ from vrep_communicator import vrep
 from time import sleep
 
 def callback(msg_data):
+    print("Start")
     vrep.simxFinish(-1)
     robots_threads = {}
     port_num = const.CON_PORT
